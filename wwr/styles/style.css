@@ -87,6 +87,7 @@ footer a {
 footer a:hover {
     background-color: #5399c4;
     color: #f9e532;
+    text-decoration: underline;
 }
 
 .logo {
@@ -102,5 +103,5 @@ footer p {
 }
 
 footer p a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
