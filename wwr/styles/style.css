@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=PT+Sans&family=Varela+Round&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -7,6 +10,7 @@ nav a {
     text-align: center;
     color: #000000;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1 {
@@ -32,6 +36,14 @@ main section {
 
 body {
     background-color: #5399c4;
+    font-family: Nunito, PT Sans, Varela-Round;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
 }
 
 header {
@@ -47,6 +59,19 @@ nav a:hover {
     background-color: #ffffff;
     color: #000000;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.card-img {
+    border: 10px solid #f9e532;   
+}
+
+main section img {
+    box-sizing: border-box;
+    padding: 0;
 }
 
 .book:hover, .join:hover {
@@ -56,15 +81,23 @@ nav a:hover {
 
 .msg {
     background-color: #fe7f2d;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 footer {
     background-color: #f9e532;
     color: #000000;
+    padding: 25px 50px;
+    padding-top: 15px;
+    margin-top: 200px;
 }
 
 .home-title {
     color: #ffffff;
+    font-family: PT Sans, Nunito, Varela-Round;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
@@ -73,10 +106,13 @@ h4 {
 
 .msg h2 {
     color: #ffffff;
+    font-family: PT Sans, Nunito, Varela-Round;
 }
 
 .msg p {
     color: #ffffff;
+    font-size: 1em;
+    padding: 15px;
 }
 
 footer a {
@@ -96,6 +132,7 @@ footer a:hover {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 footer p {
@@ -106,4 +143,23 @@ footer p {
 footer p a:hover {
     text-decoration: none;
     
+}
+
+.social {
+    padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin-top: 200px 0;
+    padding: 80px;
+    
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.mountains {
+    padding-top: 50px;
+    padding-bottom: 70px;
 }
