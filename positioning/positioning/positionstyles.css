@@ -191,21 +191,21 @@
   width: 200px; 
   height: 200px; 
   background-color: green; 
-  grid-column: ;
+  /*grid-column: ;*/
   grid-row: 5/6;
 } 
 .yellow6 {
   width: 200px; 
   height: 400px; 
   background-color: gold;
-  grid-column: ;
-  grid-row: ;
+  /*grid-column: ;*/
+  /*grid-row: ;*/
 } 
 .blue6 {
   width: 400px; 
   height: 400px; 
   background-color: blue; 
-  grid-column: ;
+  /*grid-column: ;*/
   grid-row: 2/5;
 } 
 
