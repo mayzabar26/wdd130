@@ -5,7 +5,7 @@
   grid-template-columns: 1fr 1fr; 
   justify-items: center; /*Aligning items. Horizontal alignment is controlled with the justify- properties.*/
                         /* This is the parent of the activity 1 boxes. */
-  grid-gap: 20px;
+  grid-gap: 50px;
 }
 .red1 { 
   width: 100%; 
