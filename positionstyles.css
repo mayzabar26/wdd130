@@ -40,6 +40,7 @@
 /* Activity 2 styles */ 
 .content2 {
   display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px;
   
   /* This is the parent of the activity 2 boxes. */
 }
@@ -52,16 +53,28 @@
   width: 100px; 
   height: 100px; 
   background-color: green; 
+  grid-column: 2/3;
+  grid-row: 2/3;  
+  margin-top: -50px;
+  margin-right: -50px;
 } 
 .yellow2 {
   width: 100px; 
   height: 100px; 
   background-color: gold; 
+  grid-column: 3/4;
+  grid-row: 3/4;  
+  margin-top: -50px;
+  margin-right: -50px;
 } 
 .blue2 {
   width: 100px; 
   height: 100px; 
   background-color: blue; 
+  grid-column: 4/5;
+  grid-row: 4/5;  
+  margin-top: -50px;
+  margin-right: -50px;
 } 
 
 
