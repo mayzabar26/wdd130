@@ -61,6 +61,9 @@ header {
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
+.homepage, .book, .review {
+  text-align: justify;
+}
 
 p {
   font-family: var(--paragraph-font);
