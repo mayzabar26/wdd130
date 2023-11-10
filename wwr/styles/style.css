@@ -113,6 +113,7 @@ nav a:hover {
     width: 100%; 
     transition: transform .5s;
     box-shadow: 5px 5px 10px white;
+    border-radius: 10px;
 }
 
 .card-img:hover {
@@ -295,7 +296,7 @@ footer p a:hover {
 #river {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 0 auto;
+    margin-top: 0;
 }
 
 #river-box {
@@ -311,6 +312,7 @@ footer p a:hover {
     border: 10px solid #f9e532;  
     transition: transform .5s;
     box-shadow: 5px 5px 10px white;
+    border-radius: 10px;
 }
 
 #river-msg {
@@ -319,7 +321,7 @@ footer p a:hover {
     margin-top: -500px;
     text-align: right;
     margin-right: -270px;
-    padding: 0 auto;   
+    padding: 0;   
 }
 
 .content1, .content2, .content3 {
@@ -336,7 +338,7 @@ footer p a:hover {
 #river2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 0 auto;
+    margin-top: 0;
 }
 
 #river-box2 {
@@ -352,6 +354,7 @@ footer p a:hover {
     border: 10px solid #f9e532;  
     transition: transform .5s;
     box-shadow: 5px 5px 10px white;
+    border-radius: 10px;
 }
 
 #river-msg2 {
@@ -360,7 +363,7 @@ footer p a:hover {
     margin-top: -500px;
     text-align: right;
     margin-right: -270px;
-    padding: 0 auto;   
+    padding: 0;   
 }
 
 .content4, .content5, .content6 {
@@ -382,6 +385,7 @@ footer p a:hover {
 .next_adv {
     text-align: left;
     margin-left: 40px;
+    margin-bottom: 50PX;
     margin-top: -20px;
     font-size: 50px;
 }
@@ -393,6 +397,7 @@ footer p a:hover {
     margin: 30px;
     box-sizing: border-box;
     padding: 0;
+    border-radius: 10px;
 }
 
 .adventure2 {
@@ -402,6 +407,7 @@ footer p a:hover {
     margin: 30px;
     box-sizing: border-box;
     padding: 0;
+    border-radius: 10px;
 }
 
 .adventure3 {
@@ -411,4 +417,23 @@ footer p a:hover {
     margin: 30px;
     box-sizing: border-box;
     padding: 0;
+    border-radius: 10px;
+}
+
+.button-box1 {
+    text-align: center;
+}
+
+.button1 {
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.button-box1 a:hover {
+    background-color: #000000;
+    color: white;
 }
