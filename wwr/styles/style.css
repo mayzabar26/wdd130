@@ -288,3 +288,35 @@ footer p a:hover {
         margin-top: 25px;
     }
 }
+
+/*rivers' page starts right here*/
+
+/*First part: image*/
+#river {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: 0 auto;
+}
+
+#river-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+    padding: 50px;
+}
+
+#river-img1 {
+    width: 600px;
+    height: 450px;
+    align-items: center;
+}
+
+#river-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+#hero-msg h1 {
+    text-align: center;
+}
