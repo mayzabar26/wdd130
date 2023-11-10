@@ -19,8 +19,6 @@ nav a {
     margin-top: -100px;
 }
 
-
-
 #hero-box {
     grid-column: 1/4;
     grid-row: 1/3;
@@ -30,13 +28,13 @@ nav a {
 #hero-img {
     width: 100%;
     height: 115%;
+    opacity: 60%;
 }
 
 #hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 100px;
-
+    margin-top: 200px;
 }
 
 #hero-msg h1 {
@@ -152,10 +150,12 @@ footer {
 }
 
 .home-title {
-    color: #ffffff;
-    font-family: PT Sans, Nunito, Varela-Round;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    font-family: Nunito, PT Sans, Varela-Round;
     font-size: 2em;
     margin-top: 10px;
+    padding-top: 20px;
 }
 
 h4 {
@@ -294,7 +294,7 @@ footer p a:hover {
 /*First part: image 1 and text*/
 #river {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 0 auto;
 }
 
@@ -306,25 +306,67 @@ footer p a:hover {
 }
 
 #river-img1 {
-    width: 600px;
-    height: 450px;
-    align-items: center;
+    width: 500px;
+    height: 400px;
+    border: 10px solid #f9e532;  
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px white;
 }
 
 #river-msg {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin-top: 100px;
+    grid-column: 3/4;
+    grid-row: 2/2;
+    margin-top: -500px;
+    text-align: right;
+    margin-right: -270px;
+    padding: 0 auto;   
 }
 
-#hero-msg h1 {
-    text-align: center;
+.content1, .content2, .content3 {
+    text-align: justify;
+    font-size: 18px;    
+}
+
+.river1 {
+    text-align: right;
 }
 
 /*Second part: image 2 and text*/
 
+#river2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 0 auto;
+}
 
+#river-box2 {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+    padding: 50px;
+}
 
+.river-img2 {
+    width: 500px;
+    height: 400px;
+    border: 10px solid #f9e532;  
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px white;
+}
+
+#river-msg2 {
+    grid-column: 3/4;
+    grid-row: 2/2;
+    margin-top: -500px;
+    text-align: right;
+    margin-right: -270px;
+    padding: 0 auto;   
+}
+
+.content4, .content5, .content6 {
+    text-align: justify;
+    font-size: 18px;    
+}
 
 /*Third part: final and 4 images*/
 
