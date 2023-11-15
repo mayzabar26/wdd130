@@ -329,8 +329,9 @@ footer p a:hover {
     font-size: 18px;    
 }
 
-.river1 {
+.river1, .river2 {
     text-align: right;
+    color:#f9e532;
 }
 
 /*Second part: image 2 and text*/
