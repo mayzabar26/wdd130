@@ -309,6 +309,8 @@ footer p a:hover {
 #river-img1 {
     width: 500px;
     height: 400px;
+    object-fit: cover;
+    object-position: bottom;
     border: 10px solid #f9e532;  
     transition: transform .5s;
     box-shadow: 5px 5px 10px white;
@@ -352,6 +354,8 @@ footer p a:hover {
 .river-img2 {
     width: 500px;
     height: 400px;
+    object-fit: cover;
+    object-position: bottom;
     border: 10px solid #f9e532;  
     transition: transform .5s;
     box-shadow: 5px 5px 10px white;
