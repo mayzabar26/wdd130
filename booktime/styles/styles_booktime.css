@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Josefin+Sans&family=Kanit&display=swap');
+
+#content {
+    max-width: 1600px;
+    margin: 0;
+    padding: 0;
+    background: #003049;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*nav and logo*/
+.logo {
+    width: 80px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #A9000B;
+}
+
+nav a {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 35px;
+    font-size: 20px;
+    font-family: Gabarito, Josefin Sans, Kanit;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;    
+}
+
+nav a:hover {
+    color: white;
+    background-color: #003049;
+}
+
+/*First part*/
+#stephen1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 100px;
+    
+}
+
+#stephen-box1 {
+    grid-column: 1/4;
+    grid-row: 2/4;
+    padding: 50px
+}
+
+#stephen-img1 {
+    width: 60%;
+    height: 300px;
+    border: 10px solid #A9000B;  
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px white;
+    border-radius: 10px;
+}
+
+#stephen-msg1 {
+    grid-column: 3/5;
+    grid-row: 2/2;
+    margin-top: -20px;
+    margin-right: 50px;
+    color: white;
+    font-family: Gabarito, Josefin Sans, Kanit;
+    text-align: justify;
+    font-size: 20px;
+}
+
+/*second part*/
+#stephen2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 100px;
+    
+    background: linear-gradient( #003049, white 380%);
+}
+
+#stephen-box2 {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    padding: 50px;
+}
+
+#stephen-img2 {
+    width: 60%;
+    height: 300px;
+    border: 10px solid #A9000B;  
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px white;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+#stephen-msg2 {
+    grid-column: 3/5;
+    grid-row: 2/4;
+    margin-top: -180px;
+    margin-right: 50px;
+    color: white;
+    font-family: Gabarito, Josefin Sans, Kanit;
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+/*Background*/
+.back-img {
+    width: 100%;
+    margin-bottom: -248px;
+    opacity: 50%;
+}
+
+.button-box {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #A9000B;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para criar destaque */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-box a:hover {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+
+/*Footer*/
+footer {
+    background-color: #A9000B;
+    color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Gabarito, Josefin Sans, Kanit;
+    font-size: 20px;
+}
+
+footer p {
+    font-size: 1em;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: none;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #003049;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    #content {
+        max-width: 100%;
+        padding: 0 20px; /* Adapte o espaçamento lateral conforme necessário */
+    }
+
+    /* Adapte os estilos dos elementos conforme necessário para telas menores */
+    .logo {
+        margin-left: 10px; /* Ajuste a margem conforme necessário */
+    }
+
+    header {
+        grid-template-columns: 100%; /* Coluna única em telas menores */
+    }
+
+    nav {
+        flex-direction: column; /* Muda a direção da flexbox para uma coluna em telas menores */
+        align-items: center; /* Centraliza os itens na coluna */
+    }
+
+    nav a {
+        padding: 15px; /* Ajuste o espaçamento conforme necessário */
+    }
+
+    #stephen-msg1 {
+        grid-column: 1 / -1; /* Ocupa todas as colunas disponíveis */
+        margin-top: 450px; /* Espaçamento superior */
+        margin-right: 0; /* Remove a margem à direita */
+        text-align: center; /* Centraliza o texto */
+    }
+    #stephen-msg2 {
+        grid-column: 1 / -1; /* Ocupa todas as colunas disponíveis */
+        margin-top: 180px; /* Espaçamento superior */
+        margin-right: 0; /* Remove a margem à direita */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    #stephen-img1,
+    #stephen-img2 {
+        margin-top: 20px; /* Espaçamento superior */
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    #stephen-img1, #stephen-img2 {
+        width: 100%; /* Ocupa toda a largura da coluna */
+        margin-top: 20px; /* Ajuste conforme necessário */
+    }
+
+    /* Adicione mais ajustes para outros elementos conforme necessário */
+}
