@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles_booktime.css" media="all" />
+    <title>Book Time | Stephen King | Books</title>
+</head>
+<body>
+    <div id="content-books">
+<header>
+    <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo3.png" alt="Book Time Logo">
+    </a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="#">Reviews</a>
+        <a href="#">Contact Us</a>
+        </nav>
+    </header>
+    <div id="stephen3"><!--books page starts here-->
+        <div id="stephen-photo1">
+            <img id="stephen-img3" src="images/slideshow1.jpg" alt="4. Stephen King Books"><!--Photo-->
+        </div>
+        <section id="stephen-msg3">
+            <h1 class="game">Let's Play a Game!</h1>
+            <p class="game1">
+                Read the short passage from Stephen King's book.
+            </p>
+            <p class="game2">
+                How do you think that the story will be? Tell us about it!
+            </p>
+        </section>
+        <section id="stephen-msg4">
+            <h1 class="passage">Cujo</h1>
+            <p>
+                "And the dog seemed to know. His terrible, thoughtless eyes never left Donna
+                Trenton's wide blue ones. He paced forward slowly, almost languidly. Now he was
+                standing on the barnboards at the mouth of the garage. Now he was on the crushed
+                gravel twenty-five feet away. He never stopped growling. It was a low, purring
+                sound, soothing in its menace. Foam dropped from Cujo's snout. And she couldn't
+                move, not at all.
+            </p>
+
+            <p>
+                Then Tad saw the dog, recognized the blood which streaked its fur, and shrieked
+                —a high piercing sound that made Cujo shift his eyes. And that was what seemed to
+                free her."
+            </p>
+        </section>
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name:</label> <!--user's name-->
+                    <input type="text" id="name" name="user_name"/>
+                </li>
+                <li>
+                    <label for="mail" >Email:</label> <!--user's email address-->
+                    <input type="email" id="mail" name="user_email"/>
+                </li>
+                <li>
+                    <label for="msg">Review:</label> <!--user's message on the website-->
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+            </ul>
+            <li class="button">
+                <button type="submit">Send</button> <!--or: <input type="submit"-->
+            </li>
+        </form>
+    </div>
+    <script>
+    const feedbackElement = document.getElementById('feedback'); 
+    const formElement = document.forms[0]; 
+    formElement.addEventListener('submit', function(e) { 
+        e.preventDefault(); 
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        feedbackElement.style.display = "block";
+        document.body.classList.toggle('moveDown');
+        });
+        </script>
+        </div>
+        <section class="final-background">
+            <section class="background-photo">
+                <img class="back-img" src="images/slideshow2.jpg" alt="3. Books Background">
+                <nav class="button-box">
+                    <a class="button" href="#">Next Page</a>
+                </nav>
+            </section>
+            <footer>
+                <p>Book Time &copy; 2023 - Mayza Barbosa</p>
+                <p><a href="site-plan-booktime.html">Site Plan</a></p>
+                <p><a href="#">Contact Us</a></p>
+                <div class="social">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="images/face.png" alt="facebook icon" width="50">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="images/xtwitter.png" alt="twitter icon" width="50">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="images/insta.png" alt="instagram icon" width="50">
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+    </html>
