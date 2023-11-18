@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles_booktime.css" media="all">
+    <title>Book Time | Stephen King | Reviews</title>
+</head>
+<body>
+    <div id="content-review">
+<header>
+    <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo3.png" alt="Book Time Logo">
+    </a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="review.html">Reviews</a>
+        <a href="#">Contact Us</a>
+        </nav>
+    </header>
+    <div id="stephen4"><!--Reviews page starts here-->
+        <div id="book-photo1">
+            <img id="stephen-img4" src="images/Carrie-Review1.jpg" alt="4. Carrie Review"><!--Photo-->
+        </div>
+        <section id="stephen-msg5">
+            <h1 class="carrie-review">The Powerful, Carrie White</h1>
+            <p class="review1">
+                Carrie is my favorite Stephen King book! It was his first work, and his writing has improved a lot since he launched Carrie in 1974.
+                However, this book is the reason why I love his stories and also why I love horror stories. We all know that books are better than 
+                the movies, and I had this confirmation when I read Carrie a few years ago. In the movies we just have a stories about a 
+                shy girl whom was bullied at school, and out of the blue, she discovered superpowers. Sounds familiar like some movies we 
+                have out there, right? The book is so much more than that! It's about how powerful she really is that the whole town could feel and hear her, 
+                it's about the abusive relationship that her mother had, and it's the reason why she is the way that she is, it's about the 
+                vilians the their stories. It's about so much more! Now, let me tell you a little bit about the story. Without spoilers, of course!
+            </p>
+        </section>
+        <section id="stephen-msg4">
+            <h1 class="passage">Cujo</h1>
+            <p>
+                "And the dog seemed to know. His terrible, thoughtless eyes never left Donna
+                Trenton's wide blue ones. He paced forward slowly, almost languidly. Now he was
+                standing on the barnboards at the mouth of the garage. Now he was on the crushed
+                gravel twenty-five feet away. He never stopped growling. It was a low, purring
+                sound, soothing in its menace. Foam dropped from Cujo's snout. And she couldn't
+                move, not at all.
+            </p>
+
+            <p>
+                Then Tad saw the dog, recognized the blood which streaked its fur, and shrieked
+                —a high piercing sound that made Cujo shift his eyes. And that was what seemed to
+                free her."
+            </p>
+        </section>
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name:</label> <!--user's name-->
+                    <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                    <label for="mail" >Email:</label> <!--user's email address-->
+                    <input type="email" id="mail" name="user_email">
+                </li>
+                <li>
+                    <label for="msg">Review:</label> <!--user's message on the website-->
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+            </ul>
+            <li class="button">
+                <button type="submit">Send</button> <!--or: <input type="submit"-->
+            </li>
+        </form>
+    </div>
+    <script>
+    const feedbackElement = document.getElementById('feedback'); 
+    const formElement = document.forms[0]; 
+    formElement.addEventListener('submit', function(e) { 
+        e.preventDefault(); 
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        feedbackElement.style.display = "block";
+        document.body.classList.toggle('moveDown');
+        });
+        </script>
+        </div>
+        <div class="final-background">
+            <img class="back-img" src="images/background_2.jpg" alt="3. Books Background">
+            <nav class="button-box">
+                <a class="button" href="index.html">Home Page</a>
+            </nav>
+        </div>
+        <footer>
+            <p>Book Time &copy; 2023 - Mayza Barbosa</p>
+            <p><a href="site-plan-booktime.html">Site Plan</a></p>
+            <p><a href="#">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/face.png" alt="facebook icon" width="50">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/xtwitter.png" alt="twitter icon" width="50">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/insta.png" alt="instagram icon" width="50">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
