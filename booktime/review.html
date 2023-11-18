@@ -35,56 +35,67 @@
                 vilians the their stories. It's about so much more! Now, let me tell you a little bit about the story. Without spoilers, of course!
             </p>
         </section>
-        <section id="stephen-msg4">
-            <h1 class="passage">Cujo</h1>
+        <section id="stephen-msg6">
+            <div id="book-photo2">
+                <img id="stephen-img5" src="images/carrie_illustration1.jpg" alt="5. Carrie Review"><!--Photo-->
+            </div>
+            <h1 class="carrie-review1">The Story... Without Spoilers</h1>
             <p>
-                "And the dog seemed to know. His terrible, thoughtless eyes never left Donna
-                Trenton's wide blue ones. He paced forward slowly, almost languidly. Now he was
-                standing on the barnboards at the mouth of the garage. Now he was on the crushed
-                gravel twenty-five feet away. He never stopped growling. It was a low, purring
-                sound, soothing in its menace. Foam dropped from Cujo's snout. And she couldn't
-                move, not at all.
+                Stephen King's 'Carrie' introduces readers to a compelling protagonist, Carrie White, a high school student with telekinetic abilities. 
+                Carrie's character is a complex blend of vulnerability and resilience, making her instantly relatable to readers (Carrie White from the 
+                book is so much better than the movies!). The intricate dynamics of her relationship with her fanatically religious mother add a layer 
+                of psychological depth to the narrative, as Carrie struggles with both the oppressive control and unconditional love from her mother.
             </p>
 
             <p>
-                Then Tad saw the dog, recognized the blood which streaked its fur, and shrieked
-                —a high piercing sound that made Cujo shift his eyes. And that was what seemed to
-                free her."
+                The discovery of Carrie's telekinetic powers serves as the main point in the story, marking a shift from the mundane struggles 
+                of high school life to a supernatural exploration of her newfound abilities. King masterfully weaves elements of horror into the narrative, 
+                creating a gripping tale of a girl coming to terms with her extraordinary powers. The novel's antagonists, particularly the bullies at school, 
+                contribute to the escalating tension, making both sympathy for Carrie and a sense of dread as events unfold. 'Carrie' stands as a testament 
+                to King's ability to blend the supernatural with the everyday, creating a memorable and haunting exploration of power, identity, and the consequences 
+                of cruelty.
             </p>
+
         </section>
-        <div id="feedback"></div>
-        <form action="/my-handling-form-page" method="post">
-            <ul>
-                <li>
-                    <label for="name">Name:</label> <!--user's name-->
-                    <input type="text" id="name" name="user_name">
-                </li>
-                <li>
-                    <label for="mail" >Email:</label> <!--user's email address-->
-                    <input type="email" id="mail" name="user_email">
-                </li>
-                <li>
-                    <label for="msg">Review:</label> <!--user's message on the website-->
-                    <textarea id="msg" name="user_message"></textarea>
-                </li>
-            </ul>
-            <li class="button">
-                <button type="submit">Send</button> <!--or: <input type="submit"-->
+        <div id="feedback1"></div>
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+            <li>
+                <label for="name1">Name:</label> <!--user's name-->
+                <input type="text" id="name1" name="user_name1"/>
             </li>
-        </form>
-    </div>
+            <li>
+                <label for="mail1" >Email:</label> <!--user's email address-->
+                <input type="email" id="mail1" name="user_email1"/>
+            </li>
+            <li>
+                <label for="msg1">Message:</label> <!--user's message on the website-->
+                <textarea id="msg1" name="user_message1"></textarea>
+            </li>
+        </ul>
+        <li class="button">
+            <button type="submit">Send</button> <!--or: <input type="submit"-->
+        </li>
+    </form>
     <script>
-    const feedbackElement = document.getElementById('feedback'); 
-    const formElement = document.forms[0]; 
-    formElement.addEventListener('submit', function(e) { 
-        e.preventDefault(); 
-        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-        feedbackElement.style.display = "block";
-        document.body.classList.toggle('moveDown');
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback1');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name1.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
         });
         </script>
         </div>
-        <div class="final-background">
+        <div class="final-background1">
             <img class="back-img" src="images/background_2.jpg" alt="3. Books Background">
             <nav class="button-box">
                 <a class="button" href="index.html">Home Page</a>
