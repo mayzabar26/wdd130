@@ -368,74 +368,67 @@ button {
 
 .final-background1 {
     z-index: 0;
+    margin: 0;
 }
 
-form {
-    /* Center the form on the page */
-    margin: 0 auto;
-    width: 500px;
-    height: 400px;
-    /* Form outline */
+.send-us {
+    font-size: 35px;
+    text-align: center;
+}
+.review-form {
+    margin: -150px;
+    padding: -120px;
+    width: 400px;
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
-    margin-bottom: -250px;
+    position: relative;
+    right: -45%;
+    transform: translateY(-50%) translateY(150%);
+    z-index: 1;
+    background-color: #A9000B;
+    color: white;
 }
-  
+
+.back-img {
+    width: 100%;
+    opacity: 0.7; /* Ajuste a opacidade conforme necessário */
+}
+
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-  
-form li + li {
+
+form li {
     margin-top: 1em;
 }
-  
+
 label {
     display: inline-block;
     width: 90px;
     text-align: right;
+    margin-right: 10px; /* Espaço entre o rótulo e o campo de entrada */
 }
-  
-input, textarea {
-    /* To make sure that all text fields have the same font settings
-       By default, textareas have a monospace font */
-    font: 1em sans-serif;
-  
-    /* Uniform text field size */
-    width: 300px;
-    box-sizing: border-box;
-  
-    /* Match form field borders */
-    border: 1px solid #999;
-}
-  
-input:focus, textarea:focus {
-    /* Additional highlight for focused elements */
-    border-color: #000;
-}
-  
-textarea {
-    /* Align multiline text fields with their labels */
-    vertical-align: top;
 
-    /* Provide space to type some text */
+input, textarea {
+    font: 1em sans-serif;
+    width: 250px; /* Ajuste conforme necessário */
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    padding: 5px;
+}
+
+textarea {
     height: 5em;
 }
-  
+
 .button {
-    /* Align buttons with the text fields */
-    padding-left: 90px; /* same size as the label elements */
-    margin-top: 1em;
-    /*Will take out the little black dot*/
-    list-style: none;
+    text-align: right;
 }
-  
+
 button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
-    margin-left: 0.5em;
     cursor: pointer;
 }
 
@@ -446,72 +439,67 @@ button {
     left: 0;
     right: 0;
     padding: .5em;
-    /* make this element invisible until we are ready for it */
-    display: none;      
+    display: none;
 }
 
 .moveDown {
     margin-top: 3em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Responsive Page*/
-/*@media screen and (max-width: 768px) {
-    #content {
-        max-width: 100%;
-        padding: 0 20px; 
-    }
-
-    .logo {
-        margin-left: 10px;
-    }
-
+@media screen and (max-width: 767px) {
+    /* Estilos para telas menores que 768 pixels de largura */
+  
     header {
-        grid-template-columns: 100%;
+      grid-template-columns: auto; /* Altera o layout do cabeçalho para uma única coluna */
     }
-
+  
+    .logo {
+      margin: 0 auto; /* Centraliza o logotipo na tela */
+    }
+  
     nav {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column; /* Altera a direção do menu para coluna */
     }
-
+  
     nav a {
-        padding: 15px;
+      padding: 15px; /* Reduz o espaçamento interno dos itens do menu */
     }
 
-    #stephen-msg1 {
-        grid-column: 1 / -1;
-        margin-top: 450px;
-        margin-right: 0;
-        text-align: center;
-    }
-    #stephen-msg2 {
-        grid-column: 1 / -1;
-        margin-top: 180px;
-        margin-right: 0;
-        text-align: center;
-    }
-
-    #stephen-img1,
-    #stephen-img2 {
-        margin-top: 20px;
-        width: 100%;
-    }
-
-    #stephen-img1, #stephen-img2 {
-        width: 100%;
+    #stephen-img5 {
+        width: 80%;
+        border: 10px solid #A9000B;
+        border-radius: 10px;
+        margin-left: 0; 
         margin-top: 20px;
     }
-}
+  
+    #stephen1,
+    #stephen2,
+    #stephen3,
+    #stephen4 {
+      grid-template-columns: 1fr; /* Altera o layout de grade para uma única coluna */
+      margin-top: 50px; /* Reduz a margem superior para os elementos de grade */
+    }
+  
+    #stephen-msg5 {
+        margin-top: -20px; /* Ajusta a margem superior para melhor posicionamento */
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    #stephen-msg6 {
+        margin-top: 20px; /* Ajusta a margem superior para melhor posicionamento */
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+    .review-form {
+        width: 80%; /* Define uma largura para o formulário */
+        margin: 0 auto; /* Centraliza o formulário na tela */
+        transform: translateY(-50%); /* Ajusta a posição vertical do formulário */
+    }
+    
+    #feedback, #feedback1 {
+        display: none; /* Esconde os feedbacks em telas menores */
+    }
+    }

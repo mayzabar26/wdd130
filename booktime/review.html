@@ -55,42 +55,35 @@
                 to King's ability to blend the supernatural with the everyday, creating a memorable and haunting exploration of power, identity, and the consequences 
                 of cruelty.
             </p>
-
         </section>
         <div id="feedback1"></div>
-    <form action="/my-handling-form-page" method="post">
-        <ul>
-            <li>
-                <label for="name1">Name:</label> <!--user's name-->
-                <input type="text" id="name1" name="user_name1"/>
+        <form class="review-form" action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                    <h1 class="send-us">Send us your book review!</h1>
+                    <label id="name">Name:</label> <!--user's name-->
+                    <input type="text" id="name1" name="user_name1">
+                </li>
+                <li>
+                    <label id="mail1" >Email:</label> <!--user's email address-->
+                    <input type="email" id="mail" name="user_email1">
+                </li>
+                <li>
+                    <label id="msg">Message:</label> <!--user's message on the website-->
+                    <textarea id="msg1" name="user_message"></textarea>
+                </li>
+            </ul>
+            <li class="button">
+                <button type="submit">Send</button> <!--or: <input type="submit"-->
             </li>
-            <li>
-                <label for="mail1" >Email:</label> <!--user's email address-->
-                <input type="email" id="mail1" name="user_email1"/>
-            </li>
-            <li>
-                <label for="msg1">Message:</label> <!--user's message on the website-->
-                <textarea id="msg1" name="user_message1"></textarea>
-            </li>
-        </ul>
-        <li class="button">
-            <button type="submit">Send</button> <!--or: <input type="submit"-->
-        </li>
-    </form>
-    <script>
-        // get the feedback div element so we can do something with it.
+        </form>
+        <script>
         const feedbackElement = document.getElementById('feedback1');
-        // get the form so we can read what was entered in it.
         const formElement = document.forms[0];
-        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
         formElement.addEventListener('submit', function(e) {
-            // stop the form from doing the default action.
             e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
             feedbackElement.innerHTML = 'Hello '+ formElement.user_name1.value +'! Thank you for your message. We will get back with you as soon as possible!';
-            // make the feedback element visible.
             feedbackElement.style.display = "block";
-            // add a class to move everything down so our message doesn't cover it.
             document.body.classList.toggle('moveDown');
         });
         </script>
