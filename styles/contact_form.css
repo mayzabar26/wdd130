@@ -1,3 +1,7 @@
+body {
+  padding-top: 50px; /* Ajuste conforme necessário */
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -31,8 +35,21 @@ input[type=submit]:hover {
   border-radius: 15px;
   background-color: #A9000B;
   padding: 50px;
-  margin: 350px;
+  margin: 150px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   position: relative;
-  top: -320px;
+  
+}
+
+@media screen and (max-width: 600px) {
+  input[type=text], select, textarea {
+    width: 100%; /* Define a largura total para telas pequenas */
+    margin-top: 4px; /* Ajusta a margem superior para telas pequenas */
+    margin-bottom: 4px; /* Ajusta a margem inferior para telas pequenas */
+  }
+
+  .container {
+    padding: 20px; /* Ajusta o preenchimento para telas pequenas */
+    margin: 10px; /* Ajusta a margem para telas pequenas */
+  }
 }
