@@ -8,83 +8,83 @@
 </head>
 <body>
     <div id="content-review">
-<header>
-    <a id="logo_link" href="index.html">
-            <img class="logo" src="images/logo3.png" alt="Book Time Logo">
-    </a>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="books.html">Books</a>
-        <a href="review.html">Reviews</a>
-        <a href="site-plan-booktime.html">Site Plan</a>
-        </nav>
-    </header>
-    <div id="stephen4"><!--Reviews page starts here-->
-        <div id="book-photo1">
-            <img id="stephen-img4" src="images/Carrie-Review1.jpg" alt="4. Carrie Review"><!--Photo-->
-        </div>
-        <section id="stephen-msg5">
-            <h1 class="carrie-review">The Powerful, Carrie White</h1>
-            <p class="review1">
-                Carrie is my favorite Stephen King book! It was his first work, and his writing has improved a lot since he launched Carrie in 1974.
-                However, this book is the reason why I love his stories and also why I love horror stories. We all know that books are better than 
-                the movies, and I had this confirmation when I read Carrie a few years ago. In the movies we just have a stories about a 
-                shy girl whom was bullied at school, and out of the blue, she discovered superpowers. Sounds familiar like some movies we 
-                have out there, right? The book is so much more than that! It's about how powerful she really is that the whole town could feel and hear her, 
-                it's about the abusive relationship that her mother had, and it's the reason why she is the way that she is, it's about the 
-                vilians the their stories. It's about so much more! Now, let me tell you a little bit about the story. Without spoilers, of course!
-            </p>
-        </section>
-        <section id="stephen-msg6">
-            <div id="book-photo2">
-                <img id="stephen-img5" src="images/carrie_illustration1.jpg" alt="5. Carrie Review"><!--Photo-->
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo3.png" alt="Book Time Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="books.html">Books</a>
+                <a href="review.html">Reviews</a>
+                <a href="site-plan-booktime.html">Site Plan</a>
+            </nav>
+        </header>
+        <div id="stephen4"><!--Reviews page starts here-->
+            <div id="book-photo1">
+                <img id="stephen-img4" src="images/Carrie-Review1.jpg" alt="4. Carrie Review"><!--Photo-->
             </div>
-            <h1 class="carrie-review1">The Story... Without Spoilers</h1>
-            <p class="review2">
-                Stephen King's 'Carrie' introduces readers to a compelling protagonist, Carrie White, a high school student with telekinetic abilities. 
-                Carrie's character is a complex blend of vulnerability and resilience, making her instantly relatable to readers (Carrie White from the 
-                book is so much better than the movies!). The intricate dynamics of her relationship with her fanatically religious mother add a layer 
-                of psychological depth to the narrative, as Carrie struggles with both the oppressive control and unconditional love from her mother.
+            <section id="stephen-msg5">
+                <h2 class="carrie-review">The Powerful, Carrie White</h2>
+                <p class="review1">
+                    Carrie is my favorite Stephen King book! It was his first work, and his writing has improved a lot since he launched Carrie in 1974.
+                    However, this book is the reason why I love his stories and also why I love horror stories. We all know that books are better than 
+                    the movies, and I had this confirmation when I read Carrie a few years ago. In the movies, we just have stories about a 
+                    shy girl who was bullied at school, and out of the blue, she discovered superpowers. Sounds familiar like some movies we 
+                    have out there, right? The book is so much more than that! It's about how powerful she really is that the whole town could feel and hear her, 
+                    it's about the abusive relationship that her mother had, and it's the reason why she is the way that she is, it's about the 
+                    villains and their stories. It's about so much more! Now, let me tell you a little bit about the story. Without spoilers, of course!
+                </p>
+            </section>
+            <section id="stephen-msg6">
+                <div id="book-photo2">
+                    <img id="stephen-img5" src="images/carrie_illustration1.jpg" alt="5. Carrie Review"><!--Photo-->
+                </div>
+                <h2 class="carrie-review1">The Story... Without Spoilers</h2>
+                <p class="review2">
+                    Stephen King's 'Carrie' introduces readers to a compelling protagonist, Carrie White, a high school student with telekinetic abilities. 
+                    Carrie's character is a complex blend of vulnerability and resilience, making her instantly relatable to readers (Carrie White from the 
+                    book is so much better than the movies!). The intricate dynamics of her relationship with her fanatically religious mother add a layer 
+                    of psychological depth to the narrative, as Carrie struggles with both the oppressive control and unconditional love from her mother.
 
-                The discovery of Carrie's telekinetic powers serves as the main point in the story, marking a shift from the mundane struggles 
-                of high school life to a supernatural exploration of her newfound abilities. King masterfully weaves elements of horror into the narrative, 
-                creating a gripping tale of a girl coming to terms with her extraordinary powers. The novel's antagonists, particularly the bullies at school, 
-                contribute to the escalating tension, making both sympathy for Carrie and a sense of dread as events unfold. 'Carrie' stands as a testament 
-                to King's ability to blend the supernatural with the everyday, creating a memorable and haunting exploration of power, identity, and the consequences 
-                of cruelty.
-            </p>
-        </section>
-        <div id="feedback1"></div>
-        <form class="review-form" action="/my-handling-form-page" method="post">
-            <ul>
-                <li>
-                    <h1 class="send-us">Send us your book review!</h1>
-                    <label id="name">Name:</label> <!--user's name-->
-                    <input type="text" id="name1" name="user_name1">
-                </li>
-                <li>
-                    <label id="mail1" >Email:</label> <!--user's email address-->
-                    <input type="email" id="mail" name="user_email1">
-                </li>
-                <li>
-                    <label id="msg">Message:</label> <!--user's message on the website-->
-                    <textarea id="msg1" name="user_message"></textarea>
-                </li>
-            </ul>
-            <li class="button">
-                <button type="submit">Send</button> <!--or: <input type="submit"-->
-            </li>
-        </form>
-        <script>
-        const feedbackElement = document.getElementById('feedback1');
-        const formElement = document.forms[0];
-        formElement.addEventListener('submit', function(e) {
-            e.preventDefault();
-            feedbackElement.innerHTML = 'Hello '+ formElement.user_name1.value +'! Thank you for your message. We will get back with you as soon as possible!';
-            feedbackElement.style.display = "block";
-            document.body.classList.toggle('moveDown');
-        });
-        </script>
+                    The discovery of Carrie's telekinetic powers serves as the main point in the story, marking a shift from the mundane struggles 
+                    of high school life to a supernatural exploration of her newfound abilities. King masterfully weaves elements of horror into the narrative, 
+                    creating a gripping tale of a girl coming to terms with her extraordinary powers. The novel's antagonists, particularly the bullies at school, 
+                    contribute to the escalating tension, making both sympathy for Carrie and a sense of dread as events unfold. 'Carrie' stands as a testament 
+                    to King's ability to blend the supernatural with the everyday, creating a memorable and haunting exploration of power, identity, and the consequences 
+                    of cruelty.
+                </p>
+            </section>
+            <div id="feedback1"></div>
+            <form class="review-form" action="/my-handling-form-page" method="post">
+                <h1 class="send-us">Send us your book review!</h1>
+                <ul>
+                    <li>
+                        <label id="name">Name:</label> <!--user's name-->
+                        <input type="text" id="name1" name="user_name1">
+                    </li>
+                    <li>
+                        <label id="mail1">Email:</label> <!--user's email address-->
+                        <input type="email" id="mail" name="user_email1">
+                    </li>
+                    <li>
+                        <label id="msg">Message:</label> <!--user's message on the website-->
+                        <textarea id="msg1" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send</button> <!--or: <input type="submit"-->
+                    </li>
+                </ul>
+            </form>
+            <script>
+                const feedbackElement = document.getElementById('feedback1');
+                const formElement = document.querySelector('.review-form');
+                formElement.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    feedbackElement.innerHTML = 'Hello ' + formElement.user_name1.value + '! Thank you for your message. We will get back to you as soon as possible!';
+                    feedbackElement.style.display = "block";
+                    document.body.classList.toggle('moveDown');
+                });
+            </script>
         </div>
         <div class="final-background1">
             <img class="back-img" src="images/background_2.jpg" alt="3. Books Background">
@@ -111,3 +111,4 @@
     </div>
 </body>
 </html>
+
