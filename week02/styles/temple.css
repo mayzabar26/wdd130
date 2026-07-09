@@ -1,0 +1,54 @@
+* {box-sizing: border-box;}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+header p {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: lightgray;
+    width: 400px;
+}
+
+h2 {
+    border-bottom: 1px solid gray;
+    padding: 5px;
+}
+
+p {
+    text-align: left;
+    padding: 5px;
+
+}
+
+ul li {
+
+}
+
+footer {
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+}
