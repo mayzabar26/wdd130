@@ -88,3 +88,8 @@ section h2 {
 footer {
     border-top: 3px dotted var(--color-04);
 }
+
+.socialmedia img {
+    text-decoration: none;
+    width: 30px;
+}
