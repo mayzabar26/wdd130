@@ -31,16 +31,15 @@ header, main, footer {
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
     height: 140px;
     background-color: var(--color-04);
 }
 
 .logo-wwr {
     grid-column: 1/2;
-    width: 100%;
-    max-width: 200px;
-    min-width: 200px;
+    width: 150px;
+    margin-left: 40px;
+    margin-top: 10px;
 }
 
 nav {
@@ -57,18 +56,16 @@ ul {
     padding: 30px;
 }
 
-li {
-    margin-left: 20px;
-}
-
 li a {
     text-decoration: none;
     color: var(--color-02);
-    font-size: 1.2rem;
+    font-size: rem;
+    margin: 8px;
+    font-size: 1rem;
 }
 
 li a:hover {
-    color: var(--color-05);
+    color: var(--color-03);
 }
 
 /*--------TITLES--------*/
@@ -88,8 +85,6 @@ h1 {
     width: 100%;
     padding: 15px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--color-04);
     color: var(--color-02);
 }
 
@@ -106,21 +101,24 @@ h1 {
     height: auto;
 }
 
+.hero > img {
+    opacity: 0.5;
+}
+
 article {
     position: absolute;
     background-color: var(--color-04);
     margin: auto;
     color: var(--color-02);
     top: 180px;
-    opacity: 0.7;
-    
 }
 
-.hero article img {
+article .hero-small {
     float: right;
     width: 150px;
     box-shadow: 0 0 20px var(--color-01);
     margin-top: 20px;
+    border-radius: 10px;
 }
 
 
@@ -130,7 +128,6 @@ article {
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
-    gap: 20px;
     align-items: center;
 }
 
@@ -141,6 +138,8 @@ article {
 
 .history img {
     width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--color-02);
 }
 
 
@@ -148,37 +147,50 @@ article {
 /*--------ADVENTURE CARDS SECTION--------*/
 .sec-adv {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: wrap;
+    background-color: var(--color-05);
+    color: var(--color-01);
 }
 
 .sec-adv h2 {
     width: 100%;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 10px 20px;
+    color: var(--color-01);
 }
 
 figure {
     text-align: center;
+    margin-bottom: 10px;
+}
+
+figcaption {
+    font-size: 0.8rem;
 }
 
 figure img {
     width: 120px;
     height: 80px;
     object-fit: cover;
-    border: 4px solid var(--color-05);
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--color-02);
 }
 
 
 /*--------FOOTER--------*/
 footer {
-    border-top: 3px dotted var(--color-04);
+    background-color: var(--color-04);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .socialmedia img {
     text-decoration: none;
     width: 30px;
+    margin: 8px;
 }
 
 .socialmedia a {
