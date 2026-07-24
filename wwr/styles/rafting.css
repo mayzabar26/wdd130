@@ -1,12 +1,9 @@
 :root {
     --color-01: white;
     --color-02: black;
-    --color-03: #00860b;
     --color-04: #F8DD2A;
     --color-05: #695e16;
 
-    --font-01: "Poppins";
-    --font-03: "Times New Roman";
     --font-04: "Arial";
 }
 
@@ -58,13 +55,12 @@ ul {
 li a {
     text-decoration: none;
     color: var(--color-02);
-    font-size: rem;
     margin: 8px;
     font-size: 1rem;
 }
 
 li a:hover {
-    color: var(--color-03);
+    color: var(--color-01);
 }
 
 /*--------TITLES--------*/
@@ -77,16 +73,6 @@ nav, p, section, article {
     padding: 8px;
 }
 
-h1 {
-    position: absolute;
-    top: 100px;
-    width: 100%;
-    padding: 15px;
-    text-align: center;
-    color: var(--color-02);
-    font-size: 2.3rem;
-}
-
 
 /*--------HERO--------*/
 .hero {
@@ -94,17 +80,23 @@ h1 {
     margin: 20px;
 }
 
-.hero img {
+.hero > img {
     display: block;
     width: 100%;
     height: auto;
-}
-
-.hero > img {
     opacity: 0.5;
 }
 
-article {
+.hero article img {
+    float: right;
+    width: 150px;
+    height: auto;
+    margin: 0 0 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--color-01);
+}
+
+.hero article {
     position: absolute;
     background-color: var(--color-04);
     margin: auto;
@@ -112,12 +104,14 @@ article {
     top: 180px;
 }
 
-article .hero-small {
-    float: right;
-    width: 150px;
-    box-shadow: 0 0 20px var(--color-01);
-    margin-top: 20px;
-    border-radius: 10px;
+.hero h1 {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: var(--color-01);
+    font-size: 2.2rem;
 }
 
 
