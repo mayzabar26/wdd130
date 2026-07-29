@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W05 Code-along Activity: Quiz Form</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <header>
+        <img class="icon" src="images/check.png" alt="Check Icon" width="50">
+        <h1>Basic HTML and CSS Quiz</h1>
+    </header>
+
+    <form>
+        <label for="quiz">1. What does the acronym CSS stand for?</label>
+        <input type="text" id="q1" name="q1" rows="4"></INPUT>
+
+        <label for="quiz">2. What does the acronym HTML stand for?</label>
+        <textarea id="q2" name="q2" rows="4"></textarea>
+
+        <label for="quiz">3. What is the purpose of the table tag?</label>
+        <select name="q3" id="q3">
+            <option value="" selected disabled>Choose One ...</option>
+            <option value="1">1. To create a table</option>
+            <option value="2">2. To create a button</option>
+            <option value="3">3. To create an image</option>
+            <option value="4">4. To create a paragraph</option>
+        </select>
+
+        <label for="quiz">4. Look at the HTML code below. How many columns does this table have?</label>
+        <img id="code" src="images/code-q4.jpeg" alt="Code example" width="500">
+        <textarea id="q4" name="q4" rows="4"></textarea>
+    </form>
+
+</body>
+
+</html>
