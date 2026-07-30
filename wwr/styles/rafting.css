@@ -189,3 +189,32 @@ footer {
 .socialmedia a {
     text-decoration: none;
 }
+
+
+/*--------CONTACT US PAGE--------*/
+
+/*--------HEADER--------*/
+.address {
+    margin: 25px;
+    text-align: center;
+}
+
+.location {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.localimg {
+    width: 350px;
+    max-width: 450px;
+    grid-column: 1/2;
+}
+
+.form {
+    grid-column: 2/3;
+    background-color: var(--color-04);
+    border-radius: 20px;
+    width: 300px;
+    max-width: fit-content;
+    padding: 20px;
+}
