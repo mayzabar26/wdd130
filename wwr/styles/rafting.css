@@ -3,6 +3,7 @@
     --color-02: black;
     --color-04: #F8DD2A;
     --color-05: #695e16;
+    --color-06: #f8f8f8;
 
     --font-04: "Arial";
 }
@@ -19,7 +20,9 @@ body {
 }
 
 /*--------HEADER, NAV BAR AND LOGO--------*/
-header, main, footer {
+header,
+main,
+footer {
     width: 840px;
     margin: 0 auto;
 }
@@ -64,15 +67,18 @@ li a:hover {
 }
 
 /*--------TITLES--------*/
-h1, h2 {
+h1,
+h2 {
     color: var(--color-02);
 }
 
-nav, p, section, article {
+nav,
+p,
+section,
+article {
     margin: 16px;
     padding: 8px;
 }
-
 
 /*--------HERO--------*/
 .hero {
@@ -114,7 +120,6 @@ nav, p, section, article {
     font-size: 2.2rem;
 }
 
-
 /*--------SECTION - HISTORY--------*/
 .history {
     background-color: var(--color-04);
@@ -134,8 +139,6 @@ nav, p, section, article {
     border-radius: 10px;
     box-shadow: 0 0 20px var(--color-02);
 }
-
-
 
 /*--------ADVENTURE CARDS SECTION--------*/
 .sec-adv {
@@ -171,7 +174,6 @@ figure img {
     box-shadow: 0 0 20px var(--color-02);
 }
 
-
 /*--------FOOTER--------*/
 footer {
     background-color: var(--color-04);
@@ -190,31 +192,138 @@ footer {
     text-decoration: none;
 }
 
-
 /*--------CONTACT US PAGE--------*/
 
 /*--------HEADER--------*/
 .address {
-    margin: 25px;
+    margin-top: 40px;
     text-align: center;
+}
+
+.add-info {
+    margin-bottom: 0;
+}
+
+/*--------MAIN LOCATION--------*/
+.contactus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .location {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    place-items: center;
 }
 
 .localimg {
-    width: 350px;
-    max-width: 450px;
-    grid-column: 1/2;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
 }
 
+/*--------MAIN FORM--------*/
 .form {
-    grid-column: 2/3;
-    background-color: var(--color-04);
-    border-radius: 20px;
-    width: 300px;
-    max-width: fit-content;
-    padding: 20px;
+    background: var(--color-06);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px 5px;
+    font-size: 0.9rem;
+}
+
+/*--------FORM ROWS--------*/
+.form-row {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 5px;
+    align-items: start;
+}
+
+.form-row label,
+.radio-title {
+    font-weight: bold;
+}
+
+/*--------MAIN FORM INPUTS--------*/
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+/*--------MAIN FORM MESSAGE PURPOSE--------*/
+.radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.radio-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: normal;
+    padding: 0;
+}
+
+.radio-title {
+    margin-left: 0;
+    padding: 0;
+}
+
+/*--------MESSAGE AREA--------*/
+.message-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.message-group label {
+    font-weight: bold;
+}
+
+.message-group textarea {
+    width: 100%;
+    min-height: 50px;
+    padding: 5px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    resize: vertical;
+}
+
+/*--------MAIN FORM NEWSLETTER--------*/
+.newsletter label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+}
+
+/*--------MAIN FORM SUBMIT BUTTON--------*/
+button {
+    padding: 10px;
+    background: var(--color-04);
+    color: var(--color-01);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--color-02);
+    font-weight: 700;
+}
+
+button:hover {
+    background: var(--color-05);
+    color: var(--color-01);
 }

@@ -25,69 +25,77 @@
     </header>
 
     <main>
-        <div class="address">
-           <h1>RiverJoy Rafting Adventures</h1>
-           <p class="add-info">
-             321 River Run RD
-             <br>Buena Vista, USA
-             <br>(719) 555-0147
-             <br>riverjoy@gmail.com
-            </p> 
-        </div>
+        <section class="address">
+            <h1>RiverJoy Rafting Adventures</h1>
+            <p class="add-info">
+                321 River Run RD
+                <br>Buena Vista, USA
+                <br>(719) 555-0147
+                <br>riverjoy@gmail.com
+            </p>
+        </section>
+
+        <section class="contactus">
+            <section class="location">
+                <img class="localimg" src="images/location.webp" alt="RiverJoy Company Location">
+            </section>
+            
+            <section class="form">
+                <form>
+                    <!--Full Name-->
+                    <div class="form-row">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Placeholder" required>
+                    </div>
+                    
+                    <!--Email-->
+                    <div class="form-row">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Placeholder" required>
+                    </div>
+                    
+                    <!--Message Purpose-->
+                    <div class="form-row">
+                        <p class="radio-title">Message Purpose:</p>
+                    
+                        <div class="radio-options">
+                    
+                            <label>
+                                <input type="radio" name="purpose" value="general" checked>
+                                General Inquiry
+                            </label>
+                    
+                            <label>
+                                <input type="radio" name="purpose" value="reservation">
+                                Reservation Question
+                            </label>
+                    
+                            <label>
+                                <input type="radio" name="purpose" value="suggestion">
+                                Website Suggestion
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!--Message-->
+                    <div class="message-group">
+                        <label for="message">Write your message</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Type here..."></textarea>
+                    </div>
+                    
+                    <!--Newsletter-->
+                    <div class="newsletter">
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter">Please subscribe me to the monthly newsletter
+                        </label>
+                    </div>
+                    
+                    <!--Button-->
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </section>
+        </section>
         
-        <section class="location">
-            <img class="localimg" src="images/location.webp" alt="RiverJoy Company Location">
-        </section>
-
-        <section class="form">
-            <form>
-                <div class="form-group">
-                    <!--Name information-->
-                    <label for="fullname">Full Name:</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Placeholder" required>
-                </div>
-                
-                <div class="form-group">
-                    <!--Email information-->
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" placeholder="Placeholder" required>
-                </div class="form-group">
-                
-                <div class="form-group">
-                    <!--Radio form option-->
-                    <p class="radioform">Message Purpose:</p>
-
-                    <input type="radio" id="purpose" name="message" value="generalmessage">
-                    <label for="generalmessage">General Inquiry</label>   
-                
-                    <input type="radio" id="reservationmessage" name="message" value="reservationmessage">
-                    <label for="reservationmessage">Reservation Question</label>
-
-                    <input type="radio" id="suggestionmessage" name="message" value="suggestionmessage">
-                    <label for="suggestionmessage">Website Suggestion</label>
-                </div>
-                
-                <div class="form-group">
-                    <!--Write the message-->
-                    <label for="message">Write down your message</label>
-                    <textarea id="message" name="message" placeholder="Type here..." rows="5"></textarea>
-                </div>
-
-                <!--Checkbox-->
-                <div>
-                    <label>
-                        <input type="checkbox" name="newsletter">
-                        Please Subscribe me to the monthly newsletter
-                    </label>
-                </div>
-
-                <!--Submit button-->
-                <button type="submit">Get in Touch!</button>
-                
-            </form>
-
-        </section>
-
         <section class="sec-adv">
             <h2 class="adventure">We Are Here to Serve You</h2>
 
