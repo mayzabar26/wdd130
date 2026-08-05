@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-      content="Get in touch with our whitewater rafting team. Contact us with your questions, reservations, or learn more about our services.">
+    <meta name="description" content="Find your next adventure with us!">
     <meta name="author" content="Mayza Costa Barbosa">
     <title>Trips</title>
 
@@ -14,6 +13,7 @@
 </head>
 
 <body>
+    <!--HEADER AND LOGO-->
     <header>
         <img class="logo-wwr" src="images/wwr-logo-oficial.webp" alt="RiverJoy Rafting Adventures"
           width="250">
@@ -27,51 +27,122 @@
         </nav>
     </header>
 
+    <!--MAIN CONTENT WITH CARDS-->
     <main>
         <h1>The Best Rafting Trips!</h1>
 
         <section class="cards-trips">
-            <figure>
-                <img class="cards" src="images/california-salmon-river.webp" alt="California Salmon River Image">
-                <figcaption class="card-text">California Salmon River</figcaption>
-            </figure>
-
-            <figure>
-                <img class="cards" src="images/cherry-creek.webp" alt="Cherry Creek River Image">
-                <figcaption class="card-text">Cherry Creek River</figcaption>
-            </figure>
-
-            <figure>
-                <img class="cards" src="images/kaweah-river.webp" alt="Kaweah River Image">
-                <figcaption class="card-text">Kaweah River</figcaption>
-            </figure>
-
-            <figure>
-                <img class="cards" src="images/merced-river.webp" alt="Merced River Image">
-                <figcaption class="card-text">Merced River</figcaption>
-            </figure>
-
-            <figure>
-                <img class="cards" src="images/middle-fork.webp" alt="Middle Fork River Image">
-                <figcaption class="card-text">Middle Fork River</figcaption>
-            </figure>
-
-            <figure>
-                <img class="cards" src="images/south-fork.webp" alt="South Fork River Image">
-                <figcaption class="card-text">South Fork River</figcaption>
-            </figure>
-
-            <figure>
-                <img class="cards" src="images/tom-sawyer.webp" alt="Tom Sawyer River Image">
-                <figcaption class="card-text">Tom Sawyer River</figcaption>
-            </figure>
             
-            <figure>
-                <img class="cards" src="images/tuolumne-river.webp" alt="Tuolumne River Image">
-                <figcaption class="card-text">Tuolumne River</figcaption>
-            </figure>
+            <div class="cards">
+                <img class="imgcard" src="images/california-salmon-river.webp" alt="Salmon River Image">
+                
+                <div class="divcardinfo">
+                    <p class="tripsinfo">The Salmon River flows through Idaho, dropping over 7,000 feet before
+                        joining the Snake River. It is
+                        one of the largest free-flowing rivers in the continental U.S. and the longest river system
+                        within a
+                        single state.
+                    </p>
+                    <h3>Salmon River</h3>
+                </div>
+            </div>
+            
+
+            <div class="cards">
+                <img class="imgcard" src="images/cherry-creek.webp" alt="Cherry Creek River Image">
+
+                <div class="divcardinfo">
+                    <p class="tripsinfo">Cherry Creek, also known as the Upper Tuolumne, is one of the most challenging commercial rafting
+                    trips in the U.S. This thrilling adventure features 9 miles of Class V rapids, stunning granite
+                    canyons, and remote Wild & Scenic landscapes, delivering an unforgettable experience for experienced
+                    adventurers.
+                    </p>
+                    <h3>Cherry Creek River</h3>
+                </div>
+            </div>
+
+            <div class="cards">
+                <img class="imgcard" src="images/kaweah-river.webp" alt="Kaweah River Image">
+                
+                <div class="divcardinfo">
+                    <p class="tripsinfo">
+                        Located near Sequoia National Park, the Kaweah River offers exciting Class IV+ rapids, technical
+                        whitewater, and breathtaking Sierra scenery. Perfect for adventurous paddlers seeking a fast-paced,
+                        adrenaline-filled rafting experience.
+                    </p>
+                    <h3>Kaweah River</h3>
+                </div>
+            </div>
         </section>
-       
+
+        <!--NEXT TRIPS TABLE-->
+        <section class="nexttrips">
+            <h2>Next Adventures</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip</th>
+                        <th>Difficulty</th>
+                        <th>Best for</th>
+                        <th>Duration</th>
+                        <th>Season</th>
+                    </tr>
+                </thead>
+            
+                <tbody>
+                    <tr>
+                        <td>Merced River</td>
+                        <td>Class III-IV</td>
+                        <td>Families & Friends</td>
+                        <td>Full Day</td>
+                        <td>May–July</td>
+                    </tr>
+            
+                    <tr>
+                        <td>Middle Fork River</td>
+                        <td>Class IV</td>
+                        <td>Adventure Seekers</td>
+                        <td>2 Days</td>
+                        <td>June–September</td>
+                    </tr>
+            
+                    <tr>
+                        <td>South Fork River</td>
+                        <td>Class III</td>
+                        <td>Beginners</td>
+                        <td>Half Day</td>
+                        <td>April–October</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tom Sawyer River</td>
+                        <td>Class II</td>
+                        <td>Children & Families</td>
+                        <td>Half Day</td>
+                        <td>May–September</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tuolumne River</td>
+                        <td>Class IV-V</td>
+                        <td>Experienced Rafters</td>
+                        <td>2 Days</td>
+                        <td>June–August</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+        <section class="calltoaction">
+            <div class="action-content">
+                <h2 class="action">Plan Your <br>Perfect Trip with Us!</h2>
+                <p>Contact our team and we'll help you choose the perfect rafting adventure.</p>
+                <a class="actionbtn" href="contact.html">Get in Touch!</a>
+            </div>
+        
+            <img class="imgbtn" src="images/happy-people.webp" alt="Happy people enjoying a whitewater rafting adventure">
+        </section>
     </main>
 
     <footer>
