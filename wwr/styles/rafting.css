@@ -196,13 +196,18 @@ footer {
 
 /*--------HEADER--------*/
 .address {
-    margin-top: 40px;
     text-align: center;
 }
 
 .add-info {
     margin-bottom: 0;
 }
+
+main h1 {
+    text-align: center;
+    padding: 40px;
+}
+
 
 /*--------MAIN LOCATION--------*/
 .contactus {
@@ -325,4 +330,21 @@ button {
 button:hover {
     background: var(--color-05);
     color: var(--color-01);
+}
+
+/*--------TRIP PAGE--------*/
+.cards-trips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cards {
+    width: 80%;
+    height: 80%;
+    gap: 20px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin: 10px;
 }
