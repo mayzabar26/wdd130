@@ -435,3 +435,172 @@ thead {
     object-fit: cover;
     box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
 }
+
+/*--------HOME PAGE--------*/
+/*========================================*/
+/*--------------HOME PAGE-----------------*/
+/*========================================*/
+
+/*----------- HERO -----------*/
+
+.home-hero {
+    position: relative;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.home-hero img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+
+    max-width: 500px;
+
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, .6);
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .6);
+}
+
+.hero-btn {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background-color: #0b5d8a;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    transition: .3s;
+}
+
+.hero-btn:hover {
+    background-color: #084d71;
+}
+
+/*----------- NEWSLETTER -----------*/
+
+.newsletter {
+    width: 840px;
+
+    margin: 0 auto 4rem;
+
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: .5rem;
+}
+
+.newsletter p {
+    margin-bottom: 2rem;
+}
+
+.newsletter form {
+    display: grid;
+    gap: 1rem;
+
+    max-width: 500px;
+    margin: auto;
+}
+
+.newsletter label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.newsletter input {
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 1rem;
+}
+
+.newsletter button {
+    margin-top: 1rem;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #0b5d8a;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.newsletter button:hover {
+    background-color: #084d71;
+}
+
+/*----------- HOME GRID -----------*/
+
+.home-grid {
+    width: 840px;
+
+    margin: 0 auto 4rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 2rem;
+}
+
+.home-grid article {
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+}
+
+.home-grid img {
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+}
+
+.home-grid h2 {
+    margin: 1.2rem;
+}
+
+.home-grid p {
+    margin: 0 1.2rem 1.5rem;
+    line-height: 1.6;
+}

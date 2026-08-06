@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RiverJoy Rafting Adventures offers exciting whitewater rafting trips with expert guides and unforgettable experiences.">
+    <meta name="description" content="Experience exciting whitewater rafting adventures with RiverJoy.">
     <meta name="author" content="Mayza Costa Barbosa">
-    <title>Home Page</title>
+    <title>Home | RiverJoy Rafting Adventures</title>
 
     <!--CSS-->
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
+    <!--HEADER AND LOGO-->
     <header>
         <img class="logo-wwr" src="images/wwr-logo-oficial.webp" alt="RiverJoy Rafting Adventures"
           width="250">
@@ -25,9 +26,69 @@
             </ul>
         </nav>
     </header>
-    
+
+    <!--MAIN CONTENT-->
     <main>
-    
+        <section class="home-hero">
+            <img src="images/south-fork.webp" alt="People rafting through exciting whitewater rapids">
+            
+            <div class="hero-text">
+                <h1>Your Next Adventure Starts Here</h1>
+                <p>Experience unforgettable whitewater rafting trips with expert guides and breathtaking scenery.</p>
+                <a href="trips.html" class="hero-btn">Explore Trips</a>
+            </div>
+        </section>
+        
+        <!--NEWSLETTER-->
+        <section class="newsletter">
+            <h2>Join Our Newsletter</h2>
+            <p>Stay updated with new adventures, seasonal trips, and exclusive offers.</p>
+        
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+        
+                <button type="submit">Subscribe</button>
+            </form>
+        
+        </section>
+        
+        <!--RIVERJOY PURPOSE-->
+        <section class="home-grid">
+        
+            <article>
+                <img src="images/tom-sawyer.webp" alt="People enjoying a rafting trip">
+                <h2>Fun for Everyone</h2>
+                <p>
+                    Whether you're a beginner or an experienced paddler, our rafting trips offer
+                    exciting adventures for families, friends, and outdoor enthusiasts.
+                </p>
+            </article>
+        
+            <article>
+                <img src="images/middle-fork.webp" alt="Beautiful mountain river">
+                <h2>Discover Amazing Rivers</h2>
+                <p>
+                    Explore breathtaking rivers surrounded by incredible landscapes while enjoying
+                    safe and professionally guided rafting experiences.
+                </p>
+            </article>
+        </section>
+        
+        <!--CALL TO ACTION-->
+        <section class="calltoaction">
+            <div class="action-content">
+                <h2 class="action">Ready for Your<br> Next Adventure?</h2>
+                <p>Discover our exciting rafting trips and find the perfect adventure for you.</p>
+                <a class="actionbtn" href="contact.html">Get in Touch!</a>
+            </div>
+        
+            <img class="imgbtn" src="images/happy-person.webp"
+              alt="Happy people enjoying a whitewater rafting adventure">
+        </section>
     </main>
 
     <footer>
