@@ -41,9 +41,7 @@ header {
     margin-top: 10px;
 }
 
-nav {
-    grid-column: 2/3;
-}
+nav {grid-column: 2/3;}
 
 ul {
     display: flex;
@@ -62,9 +60,7 @@ li a {
     font-size: 1rem;
 }
 
-li a:hover {
-    color: var(--color-01);
-}
+li a:hover {color: var(--color-01);}
 
 /*--------TITLES--------*/
 h1,
@@ -162,9 +158,7 @@ figure {
     margin-bottom: 10px;
 }
 
-figcaption {
-    font-size: 0.8rem;
-}
+figcaption {font-size: 0.8rem;}
 
 figure img {
     width: 120px;
@@ -188,19 +182,13 @@ footer {
     margin: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
+.socialmedia a {text-decoration: none;}
 
 /*--------CONTACT US PAGE--------*/
 /*--------HEADER--------*/
-.address {
-    text-align: center;
-}
+.address {text-align: center;}
 
-.add-info {
-    margin-bottom: 0;
-}
+.add-info {margin-bottom: 0;}
 
 main h1 {
     text-align: center;
@@ -292,9 +280,7 @@ textarea {
     gap: 5px;
 }
 
-.message-group label {
-    font-weight: bold;
-}
+.message-group label {font-weight: bold;}
 
 .message-group textarea {
     width: 100%;
@@ -333,9 +319,7 @@ button:hover {
 }
 
 /*--------TRIP PAGE--------*/
-.cards-trips {
-    margin-top: 2px;
-}
+.cards-trips {margin-top: 2px;}
 
 .imgcard {
     width: 100%;
@@ -437,170 +421,131 @@ thead {
 }
 
 /*--------HOME PAGE--------*/
-/*========================================*/
-/*--------------HOME PAGE-----------------*/
-/*========================================*/
-
-/*----------- HERO -----------*/
-
+/*--------HOME HERO--------*/
 .home-hero {
     position: relative;
     width: 100%;
-    margin-bottom: 4rem;
+    margin: 0 0 50px;
+    padding: 0;
 }
 
-.home-hero img {
-    width: 100%;
-    height: 550px;
-    object-fit: cover;
+.homeimg {
     display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
 }
 
-.hero-text {
+.home-text {
     position: absolute;
-    top: 50%;
-    left: 8%;
+    top: 45%;
+    left: 25%;
+    text-align: center;    
     transform: translateY(-50%);
-
-    max-width: 500px;
-
-    color: white;
+    max-width: 450px;
+    margin: 0;
+    padding: 0;
+    color: var(--color-01);
+    text-shadow: 2px 2px 8px var(--color-02);
 }
-
-.hero-text h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.homeh1 {
+    font-size: 3.5rem;
     line-height: 1.2;
-
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, .6);
-}
-
-.hero-text p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    line-height: 1.6;
-
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, .6);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px var(--color-02);
+    color: var(--color-01);
 }
 
 .hero-btn {
     display: inline-block;
-
-    padding: 14px 28px;
-
-    background-color: #0b5d8a;
-    color: white;
-
+    padding: 20px 35px;
+    background-color: var(--color-04);
+    color: var(--color-01);
     text-decoration: none;
     font-weight: bold;
-
-    border-radius: 8px;
-
-    transition: .3s;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
 .hero-btn:hover {
-    background-color: #084d71;
+    background-color: var(--color-05);
+    color: var(--color-01);
+    transition: 0.3s;
 }
 
-/*----------- NEWSLETTER -----------*/
-
+/*--------NEWSLETTER--------*/
 .newsletter {
     width: 840px;
-
-    margin: 0 auto 4rem;
-
+    max-width: 90%;    
+    margin: 0 auto 60px;
     text-align: center;
 }
 
-.newsletter h2 {
-    margin-bottom: .5rem;
-}
+.new-title {margin-bottom: 10px;}
 
-.newsletter p {
-    margin-bottom: 2rem;
-}
+.newsp {margin-bottom: 25px;}
 
-.newsletter form {
-    display: grid;
-    gap: 1rem;
-
+.subscribe {
     max-width: 500px;
-    margin: auto;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
 }
 
-.newsletter label {
+.formlabel {
     text-align: left;
     font-weight: bold;
 }
 
-.newsletter input {
+.forminput {
+    width: 100%;
+    box-sizing: border-box;
     padding: 12px;
-
-    border: 1px solid #ccc;
-    border-radius: 6px;
-
+    border: 1px solid #aaa;
+    border-radius: 5px;
     font-size: 1rem;
 }
 
-.newsletter button {
-    margin-top: 1rem;
-
-    padding: 14px;
-
+.btnnews {
+    margin-top: 10px;
+    padding: 12px;
     border: none;
-    border-radius: 8px;
-
-    background-color: #0b5d8a;
-    color: white;
-
+    border-radius: 6px;
+    background-color: var(--color-04);
+    color: var(--color-02);
     font-size: 1rem;
     font-weight: bold;
-
     cursor: pointer;
-
-    transition: .3s;
+    transition: 0.3s;
 }
 
-.newsletter button:hover {
-    background-color: #084d71;
-}
-
-/*----------- HOME GRID -----------*/
-
+/*--------RIVERJOY PURPOSE CARDS--------*/
 .home-grid {
-    width: 840px;
-
-    margin: 0 auto 4rem;
-
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    width: 840px;
+    margin: 0 auto 60px;
+    gap: 30px;
 }
 
 .home-grid article {
-    background: white;
-
-    border-radius: 12px;
-
     overflow: hidden;
-
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+    background-color: var(--color-06);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.home-grid img {
+.artimg {
     width: 100%;
-    height: 230px;
-
+    display: block;
+    height: 250px;
     object-fit: cover;
 }
 
-.home-grid h2 {
-    margin: 1.2rem;
-}
+.article-title {margin: 20px 20px 20px;}
 
-.home-grid p {
-    margin: 0 1.2rem 1.5rem;
+.articlep {
+    margin: 0 20px 25px;
     line-height: 1.6;
 }
